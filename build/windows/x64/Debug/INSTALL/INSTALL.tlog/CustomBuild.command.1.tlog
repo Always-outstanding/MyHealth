@@ -1,0 +1,10 @@
+^C:\USERS\TARESH\DESKTOP\DEVLOPMENT FLUTTER APPS\MY_HEALTH\BUILD\WINDOWS\CMAKEFILES\79CB1CAEF7018E10F51E193AE325B5D5\INSTALL_FORCE.RULE
+setlocal
+cd .
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

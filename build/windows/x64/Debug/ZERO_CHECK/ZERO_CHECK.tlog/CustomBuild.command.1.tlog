@@ -1,0 +1,10 @@
+^C:\USERS\TARESH\DESKTOP\DEVLOPMENT FLUTTER APPS\MY_HEALTH\BUILD\WINDOWS\CMAKEFILES\79CB1CAEF7018E10F51E193AE325B5D5\GENERATE.STAMP.RULE
+setlocal
+"D:\install Visual Studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" "-SC:/Users/taresh/Desktop/devlopment flutter apps/my_health/windows" "-BC:/Users/taresh/Desktop/devlopment flutter apps/my_health/build/windows" --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "C:/Users/taresh/Desktop/devlopment flutter apps/my_health/build/windows/my_health.sln"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
